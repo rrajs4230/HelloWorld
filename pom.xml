@@ -15,6 +15,25 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+     <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>exec-tests</id>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <phase>test</phase>
+                        <configuration>
+                            <mainClass>HelloWorld</mainClass>
+                            <classpathScope>test</classpathScope>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+      
     </plugins>
   </build>
   
